@@ -1,4 +1,4 @@
-import os, smtplib, ssl
+import os, smtplib
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -6,6 +6,8 @@ load_dotenv()
 sender_email = os.getenv("SEND_EMAIL")
 sender_pass = os.getenv("APP_PW")
 receiver_email = os.getenv("RECEIVER_EMAIL")
+
+
 
 message = """
 Put your test message here.
