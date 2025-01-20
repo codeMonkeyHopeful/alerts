@@ -44,6 +44,8 @@ except Exception as e:
     # Not installed
     print(f"{e} No worries we got you coverd again...")
 
+# For windows we have to find the correct pythong invoker could be py
+
     os_venv_command = {
         "Linux": "sudo pip install --user virtualenv",
         "Darwin": "pip install venv",
