@@ -1,3 +1,13 @@
+#TO DO - Remove or Fix
+
+
+###############
+## DO NOT USE THIS FILE
+##################
+
+
+
+
 # Check if we have pip installed
 import os
 import platform
@@ -16,12 +26,13 @@ except Exception as e:
     os_pip_command = {
         "Linux": "python3 -m ensurepip --upgrade",
         "Darwin": "python3 -m ensurepip --upgrade",
-        "Windows": "py -m ensurepip --upgrade",
+        "Windows": "python3 -m ensurepip --upgrade",
     }
 
     pip_command = os_pip_command[platform.system()]
 
     os.system(pip_command)
+
 
 # Now we have to create our env so lets check again that we can or install it needed
 
@@ -34,14 +45,17 @@ except Exception as e:
     print(f"{e} No worries we got you coverd again...")
 
     os_venv_command = {
-        "Linux": "python3 -m ensurepip --upgrade",
-        "Darwin": "python3 -m ensurepip --upgrade",
-        "Windows": "python -m venv C:\\path\\to\\new\\virtual\\environment",
+        "Linux": "sudo pip install --user virtualenv",
+        "Darwin": "pip install venv",
+        "Windows": "python -m",
     }
 
     venv_command = os_venv_command[platform.system()]
 
     os.system(venv_command)
+
+
+# Create env and activate
 
 
 # Install our dependencies
